@@ -58,15 +58,3 @@ function azul(titulo){
     titulo.style.color="blue";
 }
 
-document.getElementById("operandoA").addEventListener("focus", cambiar);
-document.getElementById("operandoA").addEventListener("blur", regresar);
-
-document.getElementById("operandoB").addEventListener("focus", cambiar);
-document.getElementById("operandoB").addEventListener("blur", regresar);
-
-function cambiar(evento){
-    evento.target.style.background="gray";
-}
-function regresar(evento){
-    evento.target.style.background="white";
-}
