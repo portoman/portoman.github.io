@@ -2,8 +2,9 @@ html {
     background: #2196f3;
 }
 body{
-    background:  #F8FFE5 ;
-    #F8FFE5 
+   background-image: url(/documentacion/20200728_094637.jpg) ;
+   background-size:100%;
+  background-position: auto; /* Center the image */
 }
 
 h1{
