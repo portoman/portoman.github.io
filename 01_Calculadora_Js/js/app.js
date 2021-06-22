@@ -7,9 +7,8 @@ function sumar(){
 
     let resultado=parseInt(operandoA.value)+parseInt(operandoB.value);
 
-    if(isNaN(resultado)){
-        resultado="Números no introducidos"
-    }
+    ValorNaN(resultado);
+    
     document.getElementById("resultado").innerHTML=`Resultado: ${resultado}`;
 }
 
@@ -20,9 +19,8 @@ function restar(){
 
     let resultado=parseInt(operandoA.value)-parseInt(operandoB.value);
 
-    if(isNaN(resultado)){
-        resultado="Números no introducidos"
-    }
+    ValorNaN(resultado);
+
     document.getElementById("resultado").innerHTML=`Resultado: ${resultado}`;
 }
 
@@ -34,9 +32,8 @@ function multiplicar(){
 
     let resultado=parseInt(operandoA.value)*parseInt(operandoB.value);
 
-    if(isNaN(resultado)){
-        resultado="Números no introducidos"
-    }
+    ValorNaN(resultado);
+
     document.getElementById("resultado").innerHTML=`Resultado: ${resultado}`;
 }
 
@@ -48,13 +45,18 @@ function dividir(){
 
     let resultado=parseInt(operandoA.value)/parseInt(operandoB.value);
 
-    if(isNaN(resultado)){
-        resultado="Números no introducidos"
-    }
+    ValorNaN(resultado);
+
     document.getElementById("resultado").innerHTML=`Resultado: ${resultado}`;
+
 }
 
 function azul(titulo){
     titulo.style.color="blue";
 }
 
+function ValorNaN(_resultado){
+    if(isNaN(_resultado)){
+        _resultado="Números no introducidos"
+    }
+    }
