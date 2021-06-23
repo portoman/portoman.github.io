@@ -5,6 +5,7 @@ body{
    background-image: url("/documentacion/20200728_094637.jpg") ;
    background-size:100%;
   background-position: auto; /* Center the image */
+  background-repeat: no-repeat;
 }
 
 h1{
