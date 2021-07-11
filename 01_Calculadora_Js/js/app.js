@@ -41,7 +41,9 @@ function dividir() {
   let operandoA = forma["operandoA"];
   let operandoB = forma["operandoB"];
 
-  let resultado = parseInt(operandoA.value) / parseInt(operandoB.value);
+  let resultado_ = parseInt(operandoA.value) / parseInt(operandoB.value);
+
+  let resultado=resultado_.toFixed(2);
 
   ValorNaN(resultado);
 
