@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+
+#section{
+    background-color: aliceblue;
+    width:80%;
+    margin: 0px auto;
+    margin-top:30px;
+    padding:20px;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Header*/
+#titulo{
+    color:white;
+    padding:5px;
+    margin-top:30px;
+    width:35%;
+    height:90px;
+    text-align: center;
+    line-height: 90px;
+    float:left;
+    
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+#buscar{
+    float:right;
+    margin-top: 30px;
+    margin-right: 30px;
+    height:50px;
+    width: 25%;
+    padding: 5px;
+    background-color: #ccc;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+  }
+#nav{
+    width: 100%;
+}
+#nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    float: inline-start;
+    
+}
+.navegadores{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    line-height: 60px;
+    padding: 22px 30px 22px 30px;
+    transition: all 300ms;
+}
+a:hover{
+    color: black;
+}
+#nav ul{
+   background-color: black;
+   margin-top: 10px;
+   height: 60px;
+
+}
+
+.bx-wrapper, .bx-viewport{
+    height:250px !important;
+}
+
+#section{
+    
+}
+/*Article*/ 
+
+
+#posts{
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 50px;;
+    float: left;
+}
+
+.tituloArticulo{
+    font-size: 50px;
+    float: left;
+    text-shadow: 1px 1px 2px  blue;
+}
+
+article{
+    margin-bottom: 50px;
+}
+.fecha{
+    font-size: 25px;
+    color: grey;
+    margin-bottom: 20px;
+}
+#comentarios{
+    width:200px;
+    height: 50px;
+    background-color: coral;
+    float: right;
+    color:white;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+.button-more{
+    display: block;
+    padding:15px;
+    margin-top: 10px;
+    width:70px;
+    height: 15px;
+    line-height: 15px;
+   color: white;
+   padding: 22px 30px 22px 30px;
+}
+
+/*Aside*/
+
+#sidebar{
+    float: right;
+    font-family:Helvetica, Arial;
+    width:31%;
+    margin-right: 25px;
+    
+}
+
+#sidebar h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background: url("../img/lines.png") repeat-x;
+    font-size: 30px;
+}
+
+#sidebar h4 span{
+    background-color: white;
+    padding:5px;
+}
+
+#sidebar img{
+    width: 100%;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type='number'],
+select{
+    display: block;
+    padding:5px;
+    border-radius: 2px;
+    border-color: 1px solid #ccc;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+form input[type="submit"]{
+    background-color: #ccc;
+    padding:5px;
+    border:1px solid grey;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+footer{
+    text-align: center;
+   font-family: Helvetica, Arial;
+   height: 50px;
+   color:white;
+   background-color: rgba(51,51,51,0.70);
+    margin: 0px auto;
+    width:65%;
+    padding-left:20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 50px;
+}
+
+#selector-theme{
+    position: fixed;
+    top:40%;
+    background-color: rgba(51,51,51,0.5);
+    width: 50px;
+    height: 100px;
+}
+
+#to-green,
+#to-red,
+#to-blue{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#to-green{
+    background-color: green;
+}
+#to-red{
+    background-color: red;
+}
+#to-blue{
+    background-color: blue;
+}
+
+.subir{
+    color:white;
+    text-decoration: none;
+    display: block;
+    float:right;
+}
+
+#box{
+    width:40%;
+    float:left;
+    margin: 20px;
+}
+
+
+#reloj{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#333;
+    border:5px  dashed #333;
+    width: 20%;
+    padding:30px;
+    margin: 0px auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#form_contact{
+
+    width:50%;
+    margin-top: 15px;
+    font-family: Helvetica, Arial;
+    display: block;
+}
+
+#form_contact label{
+    width: 100%;
+}

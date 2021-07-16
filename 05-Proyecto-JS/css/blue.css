@@ -1,0 +1,15 @@
+body{
+    background-image: url(../img//cielo.jpg);
+    background-attachment: fixed;
+}
+
+#titulo{
+    background-color: blue;
+}
+a:hover{
+    background-color: blue;
+}
+
+.button-more{
+    background:blue;
+}

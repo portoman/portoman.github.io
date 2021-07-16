@@ -1,0 +1,15 @@
+body{
+    background-image: url(../img/rojo.jpg);
+    background-attachment: fixed;
+}
+
+#titulo{
+    background-color: red;
+}
+a:hover{
+    background-color: red;
+}
+
+.button-more{
+    background:red;
+}

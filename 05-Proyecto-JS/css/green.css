@@ -1,0 +1,15 @@
+body{
+    background-image: url(../img/hojas.jpg);
+    background-attachment: fixed;
+}
+
+#titulo{
+    background-color: green;
+}
+a:hover{
+    background-color: green;
+}
+
+.button-more{
+    background:green;
+}
