@@ -1,69 +1,88 @@
-*{
-padding: 0px;
-margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
-body{
-   background-image: url("/documentacion/img/20200728_094637.jpg") ;
-   background-size:100%;
+body {
+  background-image: url("/documentacion/img/20200728_094637.jpg");
+  background-size: 100%;
   background-position: auto; /* Center the image */
   background-repeat: no-repeat;
 }
 
-h1{
-    color: #2ebfa5;
-    
-    text-align: center;
+h1 {
+  color: #2ebfa5;
+
+  text-align: center;
 }
 
-h2{
-    color:white;
-    text-align: center;
+h2 {
+  color: white;
+  text-align: center;
 }
 
-.area{
-    padding: 10px;
-    max-width: 600px;
-    margin: 50px auto;
-    background:#3083DC;
-    border-radius: 5x;
-    text-align: center;
-    border-radius: 10px;
+.area {
+  padding: 10px;
+  max-width: 600px;
+  margin: 50px auto;
+  background: #3083dc;
+  border-radius: 5x;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#cv {
+  text-align: center;
+}
+
+
+/*Multi-Nav*/
+.dropdown-menu li {
+  position: relative;
+}
+.dropdown-menu .submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 7px;
+}
+.dropdown-menu .submenu-left {
+  right: 100%;
+  left: auto;
+}
+
+.dropdown-menu > li:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-menu > li:hover > .submenu {
+  display: block;
+}
+
+/*Responsive nav*/
+
+@media (max-width: 991px) {
+  .navbar {
+    width: 20%;
+    margin: 0px auto;
   }
 
-  #cv{
-    text-align: center;
+  .dropdown-menu li {
+    position: relative;
+  }
+  .dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
+  .dropdown-menu .submenu-left {
+    right: 100%;
+    left: auto;
   }
 
-  /*Nav Multi Dropdown*/
-      /* ============ desktop view ============ */
-      @media all and (min-width: 992px) {
-    
-        .dropdown-menu li{
-          position: relative;
-        }
-        .dropdown-menu .submenu{ 
-          display: none;
-          position: absolute;
-          left:100%; top:-7px;
-        }
-        .dropdown-menu .submenu-left{ 
-          right:100%; left:auto;
-        }
-      
-        .dropdown-menu > li:hover{ background-color: #f1f1f1 }
-        .dropdown-menu > li:hover > .submenu{
-          display: block;
-        }
-      }	
-      /* ============ desktop view .end// ============ */
-      
-      /* ============ small devices ============ */
-      @media (max-width: 991px) {
-      
-      .dropdown-menu .dropdown-menu{
-          margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
-      }
-      
-      }	
-      /* ============ small devices .end// ============ */
-    
+  .dropdown-menu > li:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}

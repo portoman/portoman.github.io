@@ -46,3 +46,7 @@ footer{
 .enlaces{
     height:100px;
 }
+
+.dropdown-item{
+    text-align: center;
+}
