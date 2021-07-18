@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bootstrap Herramientas</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" style="height: 500px">
+      <h1>Herramientas disponibles en Bootstrap</h1>
+      <!--
+        Herramientas/Utilities:
+        Altura, anchura, Bordes, Flotados, Colores, Fondos, 
+        Márgenes, Paddings, Sombras, Visibilidad, Textos, Mostrar código
+      -->
+      <div class="float-start caja w-25 h-50 border border-success rounded-3 bg-primary text-white m-2 p-3"><!--Se puede aplicar también float, de la manera tradicional, pero con start, end, etc-->
+        Hola soy la caja 1
+      </div>
+      <div class="float-start caja w-25 h-50 border border-success rounded-3  bg-danger m-2">
+        Hola soy la caja 2
+      </div>
+      <div class="float-start caja w-25 h-50 border border-success rounded-3 bg-light text-info m-2 mt-5">
+        Hola soy la caja 3
+    </div>
+    <div class="clearfix"></div>
+    <div class="mx-auto caja w-25 h-25 border border-success rounded-3 bg-primary text-white m-2 p-3 shadow visible">
+      Hola soy la caja con margin:0px auto, que en bootstrap es mx-auto
+    </div>
+  </div>
+
+
+  <hr/>
+<h2>Es necesario aplicar un clearfix, para que este texto no flote</h2>
+<hr/>
+<p class="display-1 fw-bold text-center text-uppercase"> Esto es un texto</p>
+<hr/>
+<code>
+  Soy un código
+</code>
+<kbd>CTRL+D</kbd> Para volver al escritorio
+
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="bootstrap-5.0.2-dist/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>

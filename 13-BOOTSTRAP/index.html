@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--
+          ##### EJEMPLO #####
+
+    <div class="mi-web w-75 m-auto p-5 border border-danger">
+      <h1>Aprendiendo Bootstrap</h1>
+      <h2>Bienvenido a las clases de este framework para CSS</h2>
+      <button class="btn btn-success">Hola soy un botón</button>
+    </div>
+    -->
+    <div class="container border">
+      <!--container-fluid: se extiende en toda la pantalla-->
+      <div class="row">
+        <!--Consultar documentación Bootstrap para entender el Layout. 
+                Primero la sección grid-->
+        <!--Columnas de ancho 12 (el máximo), background-color: primary, text:white, padding:2, padding-left:5-->
+        <header id="header" class="col-12 bg-primary text-white p-2 ps-5">
+          <h1>Resumen Bootstrap</h1>
+        </header>
+        <!--Inicio menus-->
+        <nav id="menu" class="col-6 bg-secondary text-white">
+          <ul>
+            <li>Inicio</li>
+            <li>Pagina 1</li>
+            <li>Pagina 2</li>
+            <li>Pagina 3</li>
+            <li>Contacto</li>
+          </ul>
+        </nav>
+        <nav id="menu2" class="col-6 bg-success text-black">
+          <ul class="row">
+            <li class="col">Inicio</li>
+            <li class="col">Pagina 1</li>
+            <li class="col">Pagina 2</li>
+            <li class="col">Pagina 3</li>
+            <li class="col">Contacto</li>
+          </ul>
+        </nav>
+
+        <nav id="menu3" class="col-12 bg-info text-white">
+          <ul class="row w-50">
+            <li class="col">Inicio</li>
+            <li class="col">Pagina 1</li>
+            <li class="col">Pagina 2</li>
+            <li class="col">Pagina 3</li>
+            <li class="col">Contacto</li>
+          </ul>
+        </nav>
+        <!--Fin menus-->
+        <!--Inicio contenido-->
+        <section id="content" class="col-12">
+          <div class="row">
+            <section id="products" class="col-9 border">
+              <h2>Productos</h2>
+              <hr />
+              <div class="items row">
+                <div class="item col bg-primary m-3">producto1</div>
+                <div class="item col-3 bg-warning m-3">producto2</div>
+                <div class="item col-3 bg-danger m-3">producto3</div>
+              </div>
+
+              <div class="items row mt-5">
+                <!--Margin-top:5-->
+                <div class="item col bg-primary m-3">producto4</div>
+                <div class="item col bg-warning m-3">producto5</div>
+                <div class="item col bg-danger m-3">producto6</div>
+                <div class="item col-4 bg-success m-3">producto7</div>
+              </div>
+
+              <!--Alineamiento horizontal: justify-content (propiedad de CSS)-->
+              <div class="row mt-1 justify-content-center">
+                <div class="item col-3 bg-primary m-3">producto8</div>
+                <div class="item col-3 bg-warning m-3">producto9</div>
+              </div>
+              <div class="items row">
+                <div class="item col bg-primary">producto10</div>
+                <div class="item col-3 bg-warning">producto11</div>
+                <div class="item col-3 bg-danger">producto12</div>
+                <div class="item col-3 bg-secondary offset-1">producto13</div>
+                <!--Offset: Aplica espacios al principio del elemento-->
+              </div>
+              <div class="items row">
+                <!--Responsive: Ejemplo:col-md-3: A partir del tamaño md (>=768px) que ocupe 3 columnas, antes ocupará 12(todo el ancho)-->
+                <div class="item col-12 col-md-3 bg-primary m-3">
+                  producto14
+                </div>
+                <div class="item col-lg-3 col-md-12 bg-warning m-3">
+                  producto15
+                </div>
+                <!--Display:none: Podemos ocultar lo que queramos a partir del tamaño que queramos-->
+                <div
+                  class="
+                    item
+                    col-lg-3 col-md-12
+                    bg-danger
+                    m-3
+                    d-sm-none d-md-block
+                  "
+                >
+                  producto16
+                </div>
+              </div>
+            </section>
+            <!--Inicio Barra lateral-->
+            <aside class="col-3 border">
+              <!--Alineamiento vertical: align-items (propiedad de CSS) y también align-self para elementos individuales--->
+              <h2>Barra lateral</h2>
+              <div
+                class="
+                  lateral
+                  row
+                  bg-warning
+                  align-items-end
+                  justify-content-center
+                "
+              >
+                <!--Ordenar elementos con order-->
+                <div class="col-4 bg-primary order-2">Elemento 1</div>
+                <div class="col-12 bg-success order-3">Elemento 2</div>
+                <div class="col-12 bg-light order-1">Elemento 3</div>
+              </div>
+              <div class="enlaces  row justify-content-center m-4">
+                <a href="herramientas.html" class="col-9 btn btn-primary"
+                  >Herramientas</a
+                >
+                <a href="componentes.html" class="col-9 btn btn-primary mt-4"
+                  >Componentes</a
+                >
+              </div>
+            </aside>
+          </div>
+        </section>
+        <!--Fin Barra lateral-->
+        <!--Fin contenido-->
+        <!--Inicio footer-->
+        <footer class="col-lg-12 bg-info">
+          Curso de Bootstrap con Alfonso Porto &copy;
+        </footer>
+        <!--Fin footer-->
+      </div>
+    </div>
+
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="bootstrap-5.0.2-dist/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>

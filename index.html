@@ -1,41 +1,335 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Página web de portoman</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
-rel="stylesheet" 
-integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
-crossorigin="anonymous">
-<link href="css/estilos.css" rel="stylesheet"/>
-</head>
-<body>
-<h1>Bienvenido a mi página web</h1>
-</br>
-<img src="/documentacion/Jesús Alfonso.jpg" class="rounded mx-auto d-block" >
-</br>
-<div class="row col-12">
-    <div class="area col-2">
-        <h2>Aplicaciones con JavaScript <img src="documentacion/imagenJs.png" height="50"/></h2>
-            <a href="/01_Calculadora_Js/index.html" class="btn btn-primary" role="button">Calculadora</a>
-            <a href="/02_Listado de personas_Js/index.html" class="btn btn-primary" role="button">Listado de personas</a>
-            <a href="/03_Reloj digital_Js/index.html" class="btn btn-primary" role="button">Reloj digital</a>
-            <a href="/04_Presupuesto/index.html" class="btn btn-primary" role="button">Presupuesto</a>
-            <a href="/05-Proyecto-JS/index.html" class="btn btn-primary" role="button">Proyecto JS</a>
+  <head>
+    <title>Página web de portoman</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link href="css/estilos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container col">
+      <header>
+        <div class="container">
+          <h1>Bienvenido a mi página web</h1>
+          <img
+            src="/documentacion/img/Jesús Alfonso.jpg"
+            class="rounded mx-auto d-block"
+          />
+        </div>
+      </header>
+      <!--Barra navegación-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-5">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <img
+                    src="/documentacion/img/html.png"
+                    alt=""
+                    width="30"
+                    height="24"
+                    class="d-inline-block align-text-top"
+                  />
+                  HTML
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"> Cursos &raquo; </a>
+                    <ul class="submenu dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="documentacion/Certificados/FT ES - Diseño Web con HTML5 + CSS.pdf"
+                          target="_blank"
+                          >"Diseño Web con HTML5 + CSS"</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="https://courses.edx.org/certificates/ce73ab10ddc840a8bfd1fb7300beb4d9"
+                          target="_blank"
+                          >"WebApp: Introducción al desarrollo de aplicaciones
+                          web"</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://github.com/portoman/HTML"
+                      target="_blank"
+                      >Repositorio</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <img
+                    src="/documentacion/img/css.svg"
+                    alt=""
+                    width="30"
+                    height="24"
+                    class="d-inline-block align-text-top"
+                  />
+                  CSS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"> Cursos &raquo; </a>
+                    <ul class="submenu dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="https://www.udemy.com/certificate/UC-2b182a13-c332-4595-aaf6-6d7280d1e328/"
+                          target="_blank"
+                          >"Master en CSS: Responsive, SASS, Flexbox, Grid y
+                          Bootstrap"</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="https://courses.edx.org/certificates/ce73ab10ddc840a8bfd1fb7300beb4d9"
+                          target="_blank"
+                          >"WebApp: Introducción al desarrollo de aplicaciones
+                          web"</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://github.com/portoman/CSS"
+                      target="_blank"
+                      >Repositorio</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <img
+                    src="/documentacion/img/imagenJs.png"
+                    alt=""
+                    width="30"
+                    height="24"
+                    class="d-inline-block align-text-top"
+                  />
+                  JavaScript
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"> Aplicaciones &raquo; </a>
+                    <ul class="submenu dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="/01_Calculadora_Js/index.html"
+                          target="_blank"
+                          >Calculadora</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="/02_Listado de personas_Js/index.html"
+                          target="_blank"
+                          >Listado de personas</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="/03_Reloj digital_Js/index.html"
+                          target="_blank"
+                          >Reloj digital</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="/04_Presupuesto/index.html"
+                          target="_blank"
+                          >Presupuesto</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="/05-Proyecto-JS/index.html"
+                          target="_blank"
+                          >Proyecto JS</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Cursos &raquo; </a>
+                    <ul class="submenu dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="documentacion/Certificados/FT ES - Diseño Web con HTML5 + CSS.pdf"
+                          target="_blank"
+                          >"Diseño Web con HTML5 + CSS"</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="https://courses.edx.org/certificates/ce73ab10ddc840a8bfd1fb7300beb4d9"
+                          target="_blank"
+                          >"WebApp: Introducción al desarrollo de aplicaciones
+                          web"</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://github.com/portoman/HTML"
+                      target="_blank"
+                      >Repositorio</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <img
+                    src="/documentacion/img/java.png"
+                    alt=""
+                    width="30"
+                    height="24"
+                    class="d-inline-block align-text-top"
+                  />
+                  Java
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"> OCA &raquo; </a>
+                    <ul class="submenu dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="https://www.credly.com/earner/earned/badge/097ecdb1-9240-454a-81b0-1630971ebb06"
+                          target="_blank"
+                          >"Oracle Certified Foundations Associate, Java"</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Cursos &raquo; </a>
+                    <ul class="submenu dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="documentacion/Certificados/Java SE Complete Programming.pdf"
+                          target="_blank"
+                          >"Java SE Complete Programming"</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="documentacion/Certificados/Diploma_2021-XTIFCD2002_PORTO_BUJÍA_JESÚS_ALFONSO.pdf"
+                          target="_blank"
+                          >"Java Foundations"</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="https://credentials.edx.org/credentials/77c14a46e72144dcab7679a049c9188d/"
+                          target="_blank"
+                          >"Certificación profesional" &raquo</a
+                        >
+                        <ul class="submenu dropdown-menu">
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://courses.edx.org/certificates/ab7440254dca4da0a5ddc2cf837c44d6"
+                              target="_blank"
+                              >"Estructuras de datos y algoritmos"</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://courses.edx.org/certificates/047c6479087446cda56f2c8fb51661a1"
+                              target="_blank"
+                              >"Escribiendo buen código"</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://courses.edx.org/certificates/deb54544f434497ea14cf3ddfffada0a"
+                              target="_blank"
+                              >"Empezando a programar"</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://github.com/portoman/HTML"
+                      target="_blank"
+                      >Repositorio</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- navbar-collapse.// -->
+        </div>
+        <!-- container-fluid.// -->
+      </nav>
+      <br />
+      <div id="cv" class="col">
+        <a
+          href="/documentacion/Jesús Alfonso Porto Bujía CV.pdf"
+          class="btn btn-success"
+          >CV</a
+        >
+      </div>
+      <br />
     </div>
-    <div class="area col">
-        <h2>CSS+HTML <img src="documentacion/imagenJs.png" height="50"/></h2>
-    </div>
-    </div>
-<br/>   
-<div id="cv">
-<a href="/documentacion/Jesús Alfonso Porto Bujía CV.pdf" class="btn btn-success">CV</a>
-</div>
-<br/>
-
-</body>
-
-
-
-</br>
-
+    <script
+      type="text/javascript"
+      src="bootstrap-5.0.2-dist/js/bootstrap.min.js"
+    ></script>
+  </body>
 </html>
