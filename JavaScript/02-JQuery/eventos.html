@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery-Eventos</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <script type="text/javascript" src="js/02-Eventos.js"></script>
+</head>
+<style>
+    #caja{
+        width:250px;
+        height:250px;
+        border:2px solid black;
+        background-color: yellow;
+        transition:all 300ms;
+    }
+    /*
+    #caja:hover{
+        background-color: red;
+        cursor:pointer;
+    }*/
+
+    input{
+        padding:10px;
+        margin-top:20px;
+        width:200px;
+        font-size:20px;
+    }
+
+#datos{
+    border:4px dashed black;
+    padding:10px;
+    width:250px;
+    height:50px;
+    margin:8px;
+    display:none;
+}
+#sigueme{
+    background-color:aqua;
+    height:20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 900px;
+    border:2px solid black;
+}
+</style>
+<body>
+    <h1>JQuery</h1>
+    <h2>02-Eventos</h2>
+    <a class="btn btn-primary mb-3" href="/JavaScript/02-JQuery/index.html" role="button">01-Indice</a>
+    <a class="btn btn-primary mb-3" href="/JavaScript/02-JQuery/eventos.html" role="button">02-Eventos</a>
+    <a class="btn btn-primary mb-3" href="/JavaScript/02-JQuery/textos.html"role="button">03-Textos</a>
+    <a class="btn btn-primary mb-3" href="/JavaScript/02-JQuery/efectos.html" role="button">04-Efectos</a>
+    <a class="btn btn-primary mb-3" href="/JavaScript/02-JQuery/Ajax.html" role="button">05-Ajax</a>
+    <a class="btn btn-primary mb-3" href="/JavaScript/02-JQuery/interface.html" role="button">06-Interface</a>
+    <div id="caja">
+        Soy una caja
+    </div>
+
+    <form>
+        <label>Nombre</label>
+        <input type="text" id="nombre"/>
+        <div id="datos"></div>
+    </form>
+
+    <div id="sigueme">
+
+    </div>
+    <script
+      type="text/javascript"
+      src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"
+    ></script>
+</body>
+</html>
