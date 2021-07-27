@@ -1,4 +1,4 @@
-* {
+*{
   padding: 0px;
   margin: 0px;
 }
@@ -9,37 +9,85 @@ body {
   background-repeat: no-repeat;
 }
 
+/*Titulo*/
 h1 {
   color: #2ebfa5;
-
   text-align: center;
 }
-
-h2 {
-  color: white;
-  text-align: center;
+p{
+  margin:0px;
 }
-
-.area {
-  padding: 10px;
-  max-width: 600px;
-  margin: 50px auto;
-  background: #3083dc;
-  border-radius: 5x;
+/*Datos*/
+.border{
+  border: none!important;
+}
+.row{
+  --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+.datos{
+  border: 1px black solid;
   text-align: center;
   border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.datosSup{
+  background-color: #2ebfa5;
+  text-align: center;
+  border-bottom: 1px black solid;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.datosInf{
+  background-color: #ccc;
+  text-align: left;
+  padding-left: 10px;
+  border-radius: 0px 0px 0px 10px ;
+  padding-top: 5px;
+  line-height: 40px;
 }
 
 #cv {
   text-align: center;
+  background-color: #ccc;
+  height: 100%;
+  border-radius: 0px 0px 10px 0px ;
+  line-height: 120px;
 }
 
+.btn{
+  width:100px ;
+}
+/*Sobre mi*/
+.sobreMi{
+  margin-left:200px ;
+  border: 1px black solid;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
+  background-color: #ccc;
+}
+.sobreMiTitulo{
+  background-color: #2ebfa5;
+  text-align: center;
+  border-bottom: 1px black solid;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.sobreMiContenido{
+  background-color: #ccc;
+  padding-left: 10px;
+  border-radius: 0px 0px 0px 10px ;
+  padding-top: 5px;
+  line-height: 40px;
+  margin-top: 15px;
+}
 
 /*Multi-Nav*/
 .navbar{
   border-radius: 5px;
   box-shadow: 2px 2px 5px black;
-  width:90%;
   margin: 0px auto;
 }
 .navbar{
@@ -73,6 +121,17 @@ h2 {
   display: block;
 }
 
+/*Acordeon*/
+
+#acordeon{
+  text-align: center;
+  background-color: blue;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+.parrafoAcordeon{
+  text-align: left;
+}
 /*Responsive nav*/
 
 @media (max-width: 991px) {
