@@ -39,6 +39,8 @@ h2 {
 .navbar{
   border-radius: 5px;
   box-shadow: 2px 2px 5px black;
+  width:90%;
+  margin: 0px auto;
 }
 .navbar{
   padding:2px;
