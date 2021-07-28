@@ -6,7 +6,7 @@ body {
   background-image: url("/documentacion/img/20200728_094637.jpg");
   background-size: 100%;
   background-position: auto; /* Center the image */
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 /*Titulo*/
