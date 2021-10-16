@@ -20,60 +20,67 @@ p{
   margin:0px;
 }
 /*Datos*/
-.border{
-  border: none!important;
-}
-.row{
-  --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-}
+
 .datos{
-  text-align: center;
-  border-radius: 10px;
   margin-top: 60px;
+  margin-left: 5%;
+  width: 35%;
+  border: 1px solid black ;
+  border-radius: 20px;
+  float: left;
+  clear: both;
+}
+.bloque_datos{
+  float: left;
+  width: 60%;
 }
 .datosSup{
   background-color: #2ebfa5;
   text-align: center;
-  border: 1px black solid;
-  border-radius: 10px 10px 0px 0px;
-  box-shadow: 1px 1px 1px black;
+  width: 100%;
+  height:80px;
+  border-radius: 20px 0px 0px 0px;
 }
 
 .datosInf{
   background-color: #ccc;
   text-align: left;
   padding-left: 10px;
-  border-radius: 0px 0px 0px 10px ;
   padding-top: 5px;
-  line-height: 40px;
-  border-bottom: 1px black solid;
-  border-left: 1px black solid;
-  box-shadow: 1px 1px 1px black;
+  width: 60%;
+  float: left;
+  border-radius: 0px 0px 0px 20px;
+  line-height: 50px;
 }
 
 #cv {
   text-align: center;
   background-color: #ccc;
-  height: 100%;
-  border-radius: 0px 0px 10px 0px ;
-  line-height: 120px;
-  border-bottom: 1px black solid;
-  border-right: 1px black solid;
-  box-shadow: 1px 1px 1px black;
+  line-height: 154px;
+  width: 40%;
+  float: left;
 }
 
 .btn{
   width:100px ;
-  margin-right: 15px;
+}
+/*Foto*/
+#foto{
+  width: 40%;
+  float: left;
+  min-height: 232px;
+  border-radius: 0px 20px 20px 0px;
 }
 /*Sobre mi*/
 .sobreMi{
-  margin-left: 100px;
+  margin-left: 50px;
+  margin-bottom: 30px;
   border: 1px black solid;
   border-radius: 10px;
   box-shadow: 1px 1px 1px black;
   background-color: #ccc;
+  width: 50%;
+  float: left;
 }
 .sobreMiTitulo{
   background-color: #2ebfa5;
@@ -99,6 +106,7 @@ p{
   border-radius: 5px;
   box-shadow: 2px 2px 5px black;
   margin: 0px auto;
+  width: 78%;
 }
 .navbar{
   padding:2px;
@@ -136,7 +144,6 @@ p{
 
 .accordion{
   text-align: center;
-  background-color: blue;
   margin: 0px auto;
   margin-top: 50px;
 }
@@ -167,18 +174,39 @@ footer{
 
 @media (max-width: 1399px) {
 
-  /*Datos*/
-.datos{
-  margin:0px auto;
-  width: 30%;
-  margin-bottom: 20px;
-}
+  .datos{
+    margin-top: 60px;
+    margin-left: 24%;
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid black ;
+    border-radius: 20px;
+    float: left;
+  }
+  .datosInf{
+    background-color: #ccc;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 60%;
+    float: left;
+    border-radius: 0px 0px 0px 20px;
+    line-height: 73px;
+  }
+  
+  #cv {
+    text-align: center;
+    background-color: #ccc;
+    line-height: 225px;
+    width: 40%;
+    float: left;
+  }
 /*Sobre mi*/
 .sobreMi{
-  margin-left: 15%;
+  margin-left: 24%;
+  float: none;
+  clear: both;
 }
-
-
 
   .navbar {
     width: 20%;
@@ -211,14 +239,15 @@ footer{
 @media (max-width: 1200px) {
 
   /*Datos*/
+
   .datos{
-    box-shadow: 1px 1px 1px black!important;
-  }
-  .datosSup{
-    background-color: #2ebfa5;
-    text-align: center;
-    border-radius: 10px 10px 0px 0px;
-    width:100%;
+    margin-top: 60px;
+    margin-left: 24%;
+    margin-bottom: 20px;
+    width: 70%;
+    border: 1px solid black ;
+    border-radius: 20px;
+    float: left;
   }
   
   .datosInf{
@@ -235,11 +264,18 @@ footer{
     text-align: center;
     background-color: #ccc;
     height: 100%;
-    border-radius: 0px 0px 10px 10px ;
-    line-height: 50px;
+    border-radius: 0px 0px 0px 10px ;
+    line-height: 110px;
     border-left: 1px black solid;
     border-right: 1px black solid;
     box-shadow: 0px 0px 0px black;
+    width: 100%;
+  }
+  #foto{
+    width: 40%;
+    float: left;
+    min-height: 270px;
+    border-radius: 0px 20px 20px 0px;
   }
 
   .navbar {

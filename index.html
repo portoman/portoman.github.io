@@ -10,18 +10,16 @@
 </head>
 
 <body>
-  <div class="container border ">
     <header>
       <h1>Bienvenido a mi web</h1>
-      <div class="row">
         <!--Datos-->
-        <div class="datos col-3">
+        <div class="datos">
+          <div class="bloque_datos">
           <div class="datosSup">
             <h2><strong>Alfonso Porto</strong></h2>
             <h4>Junior Developer<h4>
           </div>
-          <div class="item row">
-            <div class="datosInf col-7">
+            <div class="datosInf">
               <p>
                 <ion-icon name="call-outline"> </ion-icon> +34 620 77 16 28
               </p>
@@ -32,15 +30,19 @@
                 <ion-icon name="home-outline"></ion-icon> A Coruña, España
               </p>
             </div>
-            <div class="cv col">
+            <div class="cv">
               <div id="cv">
                 <a href="/documentacion/CV_Alfonso_Porto_20211016.pdf" target="_blank" class="btn btn-success">CV</a>
               </div>
             </div>
           </div>
+          <div class="bloque_foto">
+            <img id="foto" src="/documentacion/img/Alfonso_Redes2.PNG" >
+          </div>
         </div>
+        <div class="clear"></div>
          <!--Sobre mi-->
-        <div class="sobreMi col-8">
+        <div class="sobreMi">
           <div class="sobreMiTitulo">
             <h3>Sobre mi<h3>
           </div>
@@ -62,7 +64,6 @@
           </div>
         </div>
     </header>
-
     <!--Barra navegación-->
     <nav class="navbar navbar-expand-xxl navbar-dark bg-primary mt-5 col-11">
       <div class="container-fluid">
@@ -555,7 +556,6 @@
             preparación de auditorías.
           </div>
         </div>
-      </div>
     </div>
 <!--Footer-->
     <footer>
@@ -563,7 +563,6 @@
       
     </footer>
 
-  </div>
   <script type="text/javascript" src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   <!--Ionic icons-->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
