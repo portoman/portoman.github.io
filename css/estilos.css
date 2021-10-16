@@ -108,11 +108,9 @@ p{
   border-radius: 5px;
   box-shadow: 2px 2px 5px black;
   margin: 0px auto;
-  width: 78%;
-}
-.navbar{
   padding:2px;
   font-size: 20px;
+  width: 65%;
 }
 .container-fluid{
   padding: 0px;
