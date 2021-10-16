@@ -29,6 +29,7 @@ p{
   border-radius: 20px;
   float: left;
   clear: both;
+  margin-bottom: 50px;
 }
 .bloque_datos{
   float: left;
@@ -102,6 +103,7 @@ p{
 
 /*Multi-Nav*/
 .navbar{
+  margin-top: 80px;
   border-radius: 5px;
   box-shadow: 2px 2px 5px black;
   margin: 0px auto;
@@ -144,7 +146,7 @@ p{
 .accordion{
   text-align: center;
   margin: 0px auto;
-  margin-top: 50px;
+  margin-top: 180px;
 }
 .accordion-body{
  text-align: left;
