@@ -42,6 +42,7 @@ p{
   width: 100%;
   height:80px;
   border-radius: 20px 20px 0px 0px;
+  border-bottom: 1px solid black;
 }
 
 .datosInf{
@@ -118,7 +119,7 @@ p{
   margin: 0px auto;
   padding:2px;
   font-size: 20px;
-  width: 80%;
+  width: 1200px;
 }
 .container-fluid{
   padding: 0px;
@@ -154,6 +155,7 @@ p{
   text-align: center;
   margin: 0px auto;
   margin-top: 180px;
+  width: 1000px;
 }
 .accordion-body{
  text-align: left;
