@@ -119,7 +119,7 @@ p{
   margin: 0px auto;
   padding:2px;
   font-size: 20px;
-  width: 1200px;
+  width: 1290px;
 }
 .container-fluid{
   padding: 0px;
@@ -148,6 +148,19 @@ p{
 .dropdown-menu > li:hover > .submenu {
   display: block;
 }
+
+#php{
+  padding: 3px 0px 0px 0px;
+
+}
+
+#php_img{
+  filter: brightness(70%);
+}
+#php_img:hover{
+  filter: brightness(85%);
+}
+
 
 /*Acordeon*/
 
