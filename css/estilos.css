@@ -56,7 +56,15 @@ p{
   line-height: 40px;
   height: 120px;
 }
-
+.parraf{
+  display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: center;
+}
+.marginLeft{
+  margin-left: 5px;
+}
 #cv {
   background-color: #ccc;
   line-height: 129px;
